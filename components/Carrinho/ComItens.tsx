@@ -60,7 +60,7 @@ function ComItens() {
   function handleValidarCep(e: React.MouseEvent<HTMLElement>) {
     e.preventDefault();
     if (cep.length === 9) {
-      setValorCep(50);
+      setValorCep(22);
     } else {
       alert("CEP INVÁLIDO!");
     }
@@ -107,7 +107,7 @@ function ComItens() {
                 FINALIZAR COMPRAR
               </p>
             ) : (
-              <Link href={"/"} passHref>
+              <Link href={"https://site-vendas-fake.vercel.app/carrinho"} passHref>
                 <p>
                   <FontAwesomeIcon icon={faCartShopping} />
                   FINALIZAR COMPRAR
